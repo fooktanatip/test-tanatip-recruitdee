@@ -1,0 +1,24 @@
+<div class="col-12">
+  <div class="row">
+    <div class="co1 col-auto">
+      <input
+      [formControl]="form"
+      [(ngModel)]="number1"
+      (keypress)="numberOnly($event)" type="text">
+    </div>
+    <div class="co2 col">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Select
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" (click)="onSubmit()">IsPrime</a>
+          <a class="dropdown-item" (click)="onSubmit2()">IsFibanacci</a>
+        </div>
+      </div>
+    </div>
+    <div class="co3 col-auto">
+      <p>{{anys}}</p>
+    </div>
+  </div>
+</div>
